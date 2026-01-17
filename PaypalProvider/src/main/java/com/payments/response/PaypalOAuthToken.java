@@ -1,0 +1,15 @@
+package com.payments.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
+
+@Data
+public class PaypalOAuthToken {
+
+	@JsonProperty("access_token")
+    private String accessToken;
+
+    @JsonProperty("expires_in")
+    private int expiresIn;
+}
